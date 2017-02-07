@@ -59,6 +59,43 @@ var trumpOrScottArr = [[
     "It's always good to be underestimated."
 ]];
 
+var trumpFailGifArr = [
+    "trump_christie.gif",
+    "trump_head_shake.gif",
+    "trump_hold_up.gif",
+    "trump_surprise.gif",
+    "trump_wrong.gif"
+];
+
+var michaelFailGifArr = [
+    "michael_dead_inside.gif",
+    "michael_hate_it.gif",
+    "michael_just_stinks.gif",
+    "michael_no.gif",
+    "michael_not_ok.gif",
+    "michael_run_away.gif",
+    "michael_seriously.gif",
+    "michael_the_worst.gif"
+];
+
+var trumpWinGifArr = [
+    "var trumpWinGifArr = [",
+    "trump_beautiful.gif",
+    "trump_clap.gif",
+    "trump_correct.gif",
+    "trump_wat.gif",
+    "trump_you_got_it.gif"
+];
+
+var michaelWinGifArr = [
+    "michael_all_good.gif",
+    "michael_best_boss.gif",
+    "michael_dance.gif",
+    "michael_love_me.gif",
+    "michael_not_moron.gif",
+    "michael_ty.gif"
+];
+
 var zeeAnswer = "";
 var linkLock = false;
 
@@ -72,6 +109,27 @@ function trumpOrScott() {
     }
 }
 
+function getGif(wrong) {
+    var returnGif = "images/";
+    if (wrong === true) {
+        returnGif = returnGif + "fail/";
+        if (zeeAnswer === "Michael Scott") {
+            returnGif = returnGif + "michael/" + michaelFailGifArr[Math.floor(Math.random() * michaelFailGifArr.length)];
+        } else {
+            returnGif = returnGif + "trump/" + trumpFailGifArr[Math.floor(Math.random() * trumpFailGifArr.length)];
+        }
+    } else {
+        returnGif = returnGif + "win/";
+        if (zeeAnswer === "Michael Scott") {
+            returnGif = returnGif + "michael/" + michaelWinGifArr[Math.floor(Math.random() * michaelWinGifArr.length)];
+        } else {
+            returnGif = returnGif + "trump/" + trumpWinGifArr[Math.floor(Math.random() * trumpWinGifArr.length)];
+        }
+    }
+
+    return returnGif;
+}
+
 function updateQuote() {
     var currentQuote = trumpOrScott();
     zeeAnswer = currentQuote[0];
@@ -80,10 +138,11 @@ function updateQuote() {
 }
 
 function updateZeeAnswer(wrong) {
-    if(wrong === true) {
-        $("#answer").html("<div class='label label-danger'><span class='glyphicon glyphicon-remove'></span> Incorrect</div><br><br>Sad...");
+    var answerGif = getGif(wrong);
+    if (wrong === true) {
+        $("#answer").html("<div class='label label-danger'><span class='glyphicon glyphicon-remove'></span> Incorrect</div><br><br><img src='" + answerGif + "'><br>Sad...");
     } else {
-        $("#answer").html("<div class='label label-success'><span class='glyphicon glyphicon-ok'></span> Correct!</div><br><br>Nice...");
+        $("#answer").html("<div class='label label-success'><span class='glyphicon glyphicon-ok'></span> Correct!</div><br><br><img src='" + answerGif + "'><br>Nice...");
     }
 }
 
