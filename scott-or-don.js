@@ -165,14 +165,17 @@ $(document).ready(function() {
     updateQuote();
 
     $("#choose-scott").click(function(e) {
+        e.preventDefault();
         execAnswer("Michael Scott");
     });
 
     $("#choose-trump").click(function(e) {
+        e.preventDefault();
         execAnswer("Donald Trump");
     });
 
     $("#reset-choice").click(function(e) {
+        e.preventDefault();
         $("#choose-scott").addClass("btn-info");
         $("#choose-trump").addClass("btn-danger");
         $("#choose-scott").removeClass("btn-default");
