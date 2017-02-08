@@ -101,7 +101,7 @@ var trumpWinGifArr = [
     "trump_wat.gif",
     "trump_you_got_it.gif",
     "trump_yeah.gif",
-    "trump_ladies.gif"
+    "trump_ladies.gif",
     "trump_thumbs_up.gif"
 ];
 
