@@ -83,7 +83,6 @@ var michaelFailGifArr = [
 ];
 
 var trumpWinGifArr = [
-    "var trumpWinGifArr = [",
     "trump_beautiful.gif",
     "trump_clap.gif",
     "trump_correct.gif",
