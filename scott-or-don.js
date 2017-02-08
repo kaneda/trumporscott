@@ -3,8 +3,8 @@ var trumpOrScottArr = [[
     "Negotiations are all about controlling things. About being in the driver's seat. And make one tiny mistake, you're dead.",
     "I've made some empty promises in my life, but hands down, that was the most generous.",
     "In order to get hotter, you take the glasses off. you're moving in the wrong direction",
-    "Sometimes i'll start a sentence and i don't even know where it's going",
-    "Occassionally, i'll hit somebody with my car",
+    "Sometimes I'll start a sentence and I don't even know where it's going",
+    "Occassionally, I'll hit somebody with my car",
     "My mind is going a mile an hour",
     "I...declare...bankruptcy",
     "Welcome back, jerky jerk face",
@@ -60,7 +60,13 @@ var trumpOrScottArr = [[
     "Sometimes by losing a battle you find a new way to win the war.",
     "I don't like losers.",
     "It's always good to be underestimated.",
-    "The only kind of people I want counting my money are little short guys that wear yamakas every day."
+    "The only kind of people I want counting my money are little short guys that wear yamakas every day.",
+    "Robert Pattinson should not take back Kristen Stewart.",
+    "It's freezing and snowing in New York – we need global warming!",
+    "The point is, you can never be too greedy.",
+    "I have so many fabulous friends who happen to be gay",
+    "Number one, I have great respect for women. I was the one that really broke the glass ceiling on behalf of women",
+    "Success appears to happen overnight because we all see stories in newspapers and on TV about previously unknown people who have suddenly become famous. But consider a sequoia tree that has been growing for several hundred years. Just because a television crew one day decides to do a story about that tree doesn’t mean it didn’t exist before."
 ]];
 
 var trumpFailGifArr = [
@@ -68,7 +74,10 @@ var trumpFailGifArr = [
     "trump_head_shake.gif",
     "trump_hold_up.gif",
     "trump_surprise.gif",
-    "trump_wrong.gif"
+    "trump_wrong.gif",
+    "trump_shrug.gif",
+    "trump_not_a_chance.gif",
+    "trump_your_fired.gif"
 ];
 
 var michaelFailGifArr = [
@@ -79,7 +88,10 @@ var michaelFailGifArr = [
     "michael_not_ok.gif",
     "michael_run_away.gif",
     "michael_seriously.gif",
-    "michael_the_worst.gif"
+    "michael_the_worst.gif",
+    "michael_seppuku.gif",
+    "michael_smash_your_face.gif",
+    "michael_christmas_cancelled.gif"
 ];
 
 var trumpWinGifArr = [
@@ -87,7 +99,10 @@ var trumpWinGifArr = [
     "trump_clap.gif",
     "trump_correct.gif",
     "trump_wat.gif",
-    "trump_you_got_it.gif"
+    "trump_you_got_it.gif",
+    "trump_yeah.gif",
+    "trump_ladies.gif"
+    "trump_thumbs_up.gif"
 ];
 
 var michaelWinGifArr = [
@@ -96,7 +111,9 @@ var michaelWinGifArr = [
     "michael_dance.gif",
     "michael_love_me.gif",
     "michael_not_moron.gif",
-    "michael_ty.gif"
+    "michael_ty.gif",
+    "michael_blessed.gif",
+    "michael_in_yo_face.gif"
 ];
 
 var zeeAnswer = "";
