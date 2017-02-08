@@ -1,4 +1,5 @@
 var trumpOrScottArr = [[
+    "Negotiations are all about controlling things. About being in the driver's seat. And make one tiny mistake, you're dead.",
     "I've made some empty promises in my life, but hands down, that was the most generous.",
     "In order to get hotter, you take the glasses off. you're moving in the wrong direction",
     "Sometimes i'll start a sentence and i don't even know where it's going",
