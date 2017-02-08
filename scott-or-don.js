@@ -58,7 +58,8 @@ var trumpOrScottArr = [[
     "Sometimes your best investments are the ones you don't make.",
     "Sometimes by losing a battle you find a new way to win the war.",
     "I don't like losers.",
-    "It's always good to be underestimated."
+    "It's always good to be underestimated.",
+    "The only kind of people I want counting my money are little short guys that wear yamakas every day."
 ]];
 
 var trumpFailGifArr = [
