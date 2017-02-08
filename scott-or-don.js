@@ -1,4 +1,5 @@
 var trumpOrScottArr = [[
+    "I've made some empty promises in my life, but hands down, that was the most generous.",
     "In order to get hotter, you take the glasses off. you're moving in the wrong direction",
     "Sometimes i'll start a sentence and i don't even know where it's going",
     "Occassionally, i'll hit somebody with my car",
@@ -159,6 +160,7 @@ function lockNRetry() {
     $("#choose-scott").addClass("btn-default");
     $("#choose-trump").addClass("btn-default");
     $("#go-again").css('display', 'block');
+    $("html, body").animate({ scrollTop: $(document).height() }, "slow");
 }
 
 $(document).ready(function() {
