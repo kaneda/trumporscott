@@ -160,9 +160,9 @@ function updateQuote() {
 function updateZeeAnswer(wrong) {
     var answerGif = getGif(wrong);
     if (wrong === true) {
-        $("#answer").html("<div class='label label-danger'><span class='glyphicon glyphicon-remove'></span> Incorrect</div><br><br><img src='" + answerGif + "'><br>Sad...");
+        $("#answer").html("<div class='label label-danger'><span class='glyphicon glyphicon-remove'></span> Incorrect</div><br><br><img class='mobile-img' src='" + answerGif + "'><br>Sad...");
     } else {
-        $("#answer").html("<div class='label label-success'><span class='glyphicon glyphicon-ok'></span> Correct!</div><br><br><img src='" + answerGif + "'><br>Nice...");
+        $("#answer").html("<div class='label label-success'><span class='glyphicon glyphicon-ok'></span> Correct!</div><br><br><img class='mobile-img' src='" + answerGif + "'><br>Nice...");
     }
 }
 

@@ -13,7 +13,7 @@
 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-<script src="scott-or-don.js?cb=3"></script>
+<script src="scott-or-don.js?cb=4"></script>
 
 <style>
     body {
@@ -41,6 +41,24 @@
     .navbar {
         min-height: 28px;
     }
+
+    #answer {
+        width: 100%;
+    }
+
+    #go-again {
+        padding-bottom: 38px;
+    }
+
+    @media only screen and (max-width: 500px) {
+        .subtitle {
+            display: none;
+        }
+
+        .mobile-img {
+            max-width: 300px;
+        }
+    }
 </style>
 
 </head>
@@ -51,8 +69,8 @@
     <tr>
         <td><img src="images/michael_scott.png" style="max-height: 150px"></td>
         <td style="vertical-align: middle;">
-            <h1>Who Said It?</p>
-            <h3>Michael Scott of The Office or Donald Trump?</h2>
+            <h1>Who Said It?</h1>
+            <h3 class="subtitle">Michael Scott of The Office or Donald Trump?</h3>
         </td>
         <td><img src="images/donald_trump.png" style="max-height: 150px;"></td>
     </tr>
@@ -62,12 +80,8 @@
     <div id="scott-or-trump"></div><br>
     <a class="btn btn-info" href="#" id="choose-scott">Michael Scott</a> - <a class="btn btn-danger" href="#" id="choose-trump">Donald Trump</a><br><br>
     <div id="answer"></div><br>
-    <div id="go-again" style="display: none;"><a href="#" id="reset-choice">Try again?</a></div>
+    <div id="go-again" style="display: none;"><a href="#" id="reset-choice">Again!</a></div>
 </div>
-<br>
-<br>
-<br>
-<br>
 <nav class="navbar navbar-inverse navbar-fixed-bottom footer">
   <div class="container">
   &copy;2017 <a href="https://github.com/kaneda" target="_blank">Josh Begleiter</a>
