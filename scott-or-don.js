@@ -1,4 +1,7 @@
 var trumpOrScottArr = [[
+    "That's what America is built on. Big ideas. Blue jeans. The Grand Canyon.",
+    "This year, more people will use cocaine than read a book to their children.",
+    "Sometimes it makes financial sense to lose money. Like for tax purposes.",
     "You just don't care about the information.",
     "Negotiations are all about controlling things. About being in the driver's seat. And make one tiny mistake, you're dead.",
     "I've made some empty promises in my life, but hands down, that was the most generous.",
