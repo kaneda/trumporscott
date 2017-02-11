@@ -3,6 +3,7 @@
 <title>Michael Scott or Donald Trump?</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="description" content="Who said it, Michael Scott from the Office or Donald Trump?">
 
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
@@ -13,7 +14,7 @@
 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-<script src="scott-or-don.js?cb=5"></script>
+<script src="scott-or-don.js?cb=7"></script>
 
 <style>
     body {
@@ -46,7 +47,7 @@
         width: 100%;
     }
 
-    #go-again {
+    #go-again, #final-results, #trakr-ad {
         padding-bottom: 38px;
     }
 
@@ -77,10 +78,29 @@
     </table>
 </div>
 <div class="container container-fluid text-center">
+    <div id="running-score" style="display: none;">
+        <div id="num-right" class="label label-success"></div>
+        <div id="num-wrong" class="label label-danger"></div>
+        <br><br>
+    </div>
+    <div id="q-num"></div>
     <div id="scott-or-trump"></div><br>
     <a class="btn btn-info" href="#" id="choose-scott">Michael Scott</a> - <a class="btn btn-danger" href="#" id="choose-trump">Donald Trump</a><br><br>
     <div id="answer"></div><br>
-    <div id="go-again" style="display: none;"><a href="#" id="reset-choice">Again!</a></div>
+    <div id="go-again" style="display: none;"><a href="#" id="reset-choice">Another!</a></div>
+    <div id="final-results" style="display: none;">
+        <h3>Final score:</h3><br>
+        <div id="final-right" class="label label-success"></div>
+        <br><br>
+        <div id="final-wrong" class="label label-danger"></div>
+        <br><br>
+        <a href="#" id="reset-all">Try again?</a>
+    </div>
+    <div id="trakr-ad">
+        <a href="https://trakr.link" target="_blank"><img src="images/trakr-ad.png"></a>
+        <br>
+        <h5><i>Sponsored</i></h5>
+    </div>
 </div>
 <nav class="navbar navbar-inverse navbar-fixed-bottom footer">
   <div class="container">
