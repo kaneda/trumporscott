@@ -220,6 +220,7 @@ function resetQuote() {
 
     updateQuote();
     incrQNum();
+    $("html, body").animate({ scrollTop: 0 }, "slow");
 }
 
 
