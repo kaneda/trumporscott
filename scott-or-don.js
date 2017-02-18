@@ -267,6 +267,7 @@ function resetQuote() {
 
     $("#answer").empty();
     $("#quote-source").css('display', 'none');
+    $("#answer-stats").css('display', 'none');
 
     updateQuote();
     incrQNum();
