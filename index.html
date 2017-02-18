@@ -12,14 +12,6 @@
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<script>
-  (adsbygoogle = window.adsbygoogle || []).push({
-    google_ad_client: "ca-pub-6698749844783275",
-    enable_page_level_ads: true
-  });
-</script>
-
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 <script src="scott-or-don.js?cb=9"></script>
@@ -55,6 +47,11 @@
         width: 100%;
     }
 
+    .label {
+        font-size: 24px;
+    }
+
+
     #go-again, #final-results, #trakr-ad {
         padding-bottom: 38px;
     }
@@ -65,7 +62,11 @@
         }
 
         .mobile-img {
-            max-width: 300px;
+            max-width: 160px;
+        }
+
+        .label {
+            font-size: 16px;
         }
     }
 </style>
@@ -95,11 +96,19 @@
     <div id="scott-or-trump"></div><br>
     <a class="btn btn-info" href="#" id="choose-scott">Michael Scott</a> - <a class="btn btn-danger" href="#" id="choose-trump">Donald Trump</a><br><br>
     <div class="go-again" style="display: none;"><a href="#" class="reset-choice">Another!</a><br><br></div>
-    <div id="answer"></div><br>
-    <div id="answer-stats" style="display: none;">Answer Stats:<br><br>
-        <div class="label label-success" id="right-stats"></div><br><br>
-        <div class="label label-danger" id="wrong-stats"></div>
-    </div>
+    <table class="table table-responsive">
+        <tr>
+            <td>
+                <div id="answer"></div><br>
+            </td>
+            <td>
+                <div id="answer-stats" style="display: none;">Answer Stats:<br><br>
+                    <div class="label label-success" id="right-stats"></div><br><br>
+                    <div class="label label-danger" id="wrong-stats"></div>
+                </div>
+            </td>
+        </tr>
+    </table>
     <br>
     <div id="quote-source" style="display: none;"></div><br>
     <div class="go-again" style="display: none;"><a href="#" class="reset-choice">Another!</a><br><br></div>
