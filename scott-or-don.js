@@ -1,74 +1,100 @@
 var trumpOrScottArr = [
-    [ "That's what America is built on. Big ideas. Blue jeans. The Grand Canyon.", "Michael Scott" ],
-    [ "This year, more people will use cocaine than read a book to their children.", "Michael Scott" ],
-    [ "Sometimes it makes financial sense to lose money. Like for tax purposes.", "Michael Scott" ],
-    [ "You just don't care about the information.", "Michael Scott" ],
-    [ "Negotiations are all about controlling things. About being in the driver's seat. And make one tiny mistake, you're dead.", "Michael Scott" ],
-    [ "I've made some empty promises in my life, but hands down, that was the most generous.", "Michael Scott" ],
-    [ "In order to get hotter, you take the glasses off. you're moving in the wrong direction", "Michael Scott" ],
-    [ "Sometimes I'll start a sentence and I don't even know where it's going", "Michael Scott" ],
-    [ "Occassionally, I'll hit somebody with my car", "Michael Scott" ],
-    [ "My mind is going a mile an hour", "Michael Scott" ],
-    [ "I...declare...bankruptcy", "Michael Scott" ],
-    [ "Welcome back, jerky jerk face", "Michael Scott" ],
-    [ "It's a good thing russia doesn't exist any more", "Michael Scott" ],
-    [ "I will literally kill you and your entire family", "Michael Scott" ],
-    [ "And you know what's gonna be on your tombstone? 'Loser'.", "Michael Scott" ],
-    [ "There is no such thing as an appropriate joke, that's why it's a joke", "Michael Scott" ],
-    [ "You have no idea how high I can fly", "Michael Scott" ],
-    [ "Is there something besides 'Mexican' you prefer to be called? Something less offensive?", "Michael Scott" ],
-    [ "I was never in this for the money. But it turns out that the money was an absolute necessity for me.", "Michael Scott" ],
-    [ "People always talk about triumphs of the human spirit. Well, today, I had a triumph of the human body. That's why everybody was applauding for me at the end, my guts and my heart.", "Michael Scott" ],
-    [ "The hero got the girl. Who saw that coming? I did.", "Michael Scott" ],
-    [ "This is an environment of welcoming, and you should just get the hell out of here.", "Michael Scott" ],
-    [ "I don't know how George Bush did it when Colin Powell left.", "Michael Scott" ],
-    [ "I have written these things because it is my responsibility ... to profiligate great ideas.", "Michael Scott" ],
-    [ "You call your friends retards when they're acting retarded", "Michael Scott" ],
-    [ "My God, if you're wearing a dress, please keep your knees together, nobody wants to see that.", "Michael Scott" ],
-    [ "Everybody likes new inventions, new technology. People will never be replaced by machines. In the end, life and business are about human connections.", "Michael Scott" ],
-    [ "A little cover-up on your Adam's apple will make it appear smaller, which will make you look less like a transvestite.", "Michael Scott" ],
-    [ "Pizza. Great equalizer. Rich people love pizza. Poor people love pizza. White people love pizza. Black people love pizza.", "Michael Scott" ],
-    [ "If we come across somebody with no arms or legs, do we bother resuscitating them?", "Michael Scott" ],
-    [ "The most sacred thing I do is care and provide for my workers, my family.", "Michael Scott" ],
-    [ "Any man who says he totally understands women is a fool. Because they are un-understandable.", "Michael Scott" ],
-    [ "I set the rules, and you follow them blindly, okay? And if you have a problem with that, then you can talk to our complaint department. It's a trashcan.", "Michael Scott" ],
-    [ "I don't know what I'm grabbing here!", "Michael Scott" ],
-    [ "Negotiation is an art. Back and forth. Give and take.", "Michael Scott" ],
-    [ "Why would you date an amateur when you can date a professional?", "Michael Scott" ],
-    [ "Don't ever, for any reason, do anything to anyone for any reason ever, no matter what, no matter where, or who, or who you are with, or where you are going, or where you've been... ever, for any reason whatsoever.", "Michael Scott" ],
-    [ "I have to say that I'm so impressed with the potential that you see in me.", "Michael Scott" ],
-    [ "Don't think a woman can be a man? Well, then that's your stereotype, not mine.", "Michael Scott" ],
-    [ "Is that what we're going for now, just OK? We used to go for pretty good.", "Michael Scott" ],
-    [ "He is a good guy, not a terrorist.", "Michael Scott" ],
-    [ "Usually if I fire somebody who's bad, I'll tell them how great they are. Because I don't want to hurt people's feelings.", "Donald Trump" ],
-    [ "I promise not to talk about your massive plastic surgeries that didn't work.", "Donald Trump" ],
-    [ "You know, wealthy people don't like me.", "Donald Trump" ],
-    [ "I could be happy living in a studio apartment.", "Donald Trump" ],
-    [ "I have a great relationship with the blacks.", "Donald Trump" ],
-    [ "I don't even consider myself ambitious.", "Donald Trump" ],
-    [ "Money is a little bit of a scorecard, but I don't do it for the money.", "Donald Trump" ],
-    [ "Bing bing, bong bong, bing bing bing", "Donald Trump" ],
-    [ "I'm not a huge fan of Japan, but I love their custom.", "Donald Trump" ],
-    [ "You know, it doesn't really matter ... as long as you've got a young and beautiful piece of ass.", "Donald Trump" ],
-    [ "With the proper woman you don't need Viagra", "Donald Trump" ],
-    [ "It's very important that people aspire to be successful. The only way you can do it is if you look at somebody who is.", "Donald Trump" ],
-    [ "I mean, leadership is a very strange word because, you know, some people have it, some people don't and nobody knows why.", "Donald Trump" ],
-    [ "It's my opinion that to a large extent, Mike Tyson was railroaded in this case.", "Donald Trump" ],
-    [ "I've won many club championships and I was always the best athlete.", "Donald Trump" ],
-    [ "I have never seen a thin person drinking Diet Coke.", "Donald Trump" ],
-    [ "The concept of shaking hands is absolutely terrible, and statistically I've been proven right.", "Donald Trump" ],
-    [ "Sometimes your best investments are the ones you don't make.", "Donald Trump" ],
-    [ "Sometimes by losing a battle you find a new way to win the war.", "Donald Trump" ],
-    [ "I don't like losers.", "Donald Trump" ],
-    [ "It's always good to be underestimated.", "Donald Trump" ],
-    [ "The only kind of people I want counting my money are little short guys that wear yamakas every day.", "Donald Trump" ],
-    [ "Robert Pattinson should not take back Kristen Stewart.", "Donald Trump" ],
-    [ "It's freezing and snowing in New York. We need global warming!", "Donald Trump" ],
-    [ "The point is, you can never be too greedy.", "Donald Trump" ],
-    [ "I have so many fabulous friends who happen to be gay", "Donald Trump" ],
-    [ "Number one, I have great respect for women. I was the one that really broke the glass ceiling on behalf of women", "Donald Trump" ],
-    [ "Success appears to happen overnight because we all see stories in newspapers and on TV about previously unknown people who have suddenly become famous. But consider a sequoia tree that has been growing for several hundred years. Just because a television crew one day decides to do a story about that tree doesn't mean it didn't exist before.", "Donald Trump" ]
+    [ "That's what America is built on. Big ideas. Blue jeans. The Grand Canyon.", "Michael Scott", "Season 7 - Episode 10" ],
+    [ "This year, more people will use cocaine than read a book to their children.", "Michael Scott", "Season 2 - Episode 20" ],
+    [ "Sometimes it makes financial sense to lose money. Like for tax purposes.", "Michael Scott", "Season 6 - Episode 21" ],
+    [ "You just don't care about the information.", "Michael Scott", "Season 5 – Episode 17" ],
+    [ "Negotiations are all about controlling things. About being in the driver's seat. And make one tiny mistake, you're dead.", "Michael Scott", "Season 3 - Episode 18" ],
+    [ "I've made some empty promises in my life, but hands down, that was the most generous.", "Michael Scott", "Season 6 - Episode 12" ],
+    [ "In order to get hotter, you take the glasses off. you're moving in the wrong direction", "Michael Scott", "Season 4 - Episode 12" ],
+    [ "Sometimes I'll start a sentence and I don't even know where it's going", "Michael Scott", "Season 5 - Episode 11" ],
+    [ "Occassionally, I'll hit somebody with my car", "Michael Scott", "Season 4 - Episode 01" ],
+    [ "My mind is going a mile an hour", "Michael Scott", "Season 6 - Episode 24" ],
+    [ "I...declare...bankruptcy", "Michael Scott", "Season 4 - Episode 04" ],
+    [ "It's a good thing russia doesn't exist any more", "Michael Scott", "Season 6 - Episode 12" ],
+    [ "I will literally kill you and your entire family", "Michael Scott", "Season 7 - Episode 08" ],
+    [ "And you know what's gonna be on your tombstone? 'Loser'.", "Michael Scott", "Season 7 - Episode 12" ],
+    [ "There is no such thing as an appropriate joke, that's why it's a joke", "Michael Scott", "Season 2 - Episode 02" ],
+    [ "You have no idea how high I can fly", "Michael Scott", "Season 5 - Episode 18" ],
+    [ "Is there something besides 'Mexican' you prefer to be called? Something less offensive?", "Michael Scott", "Season 1 - Episode 02" ],
+    [ "I was never in this for the money. But it turns out that the money was an absolute necessity for me.", "Michael Scott", "Season 4 - Episode 04" ],
+    [ "People always talk about triumphs of the human spirit. Well, today, I had a triumph of the human body. That's why everybody was applauding for me at the end, my guts and my heart.", "Michael Scott", "Season 4 - Episode 01" ],
+    [ "The hero got the girl. Who saw that coming? I did.", "Michael Scott", "Season 2 - Episode 22" ],
+    [ "This is an environment of welcoming, and you should just get the hell out of here.", "Michael Scott", "Season 1 - Episode 02" ],
+    [ "I don't know how George Bush did it when Colin Powell left.", "Michael Scott", "Season 4 - Episode 06" ],
+    [ "I have written these things because it is my responsibility ... to profiligate great ideas.", "Michael Scott", "Season 5 - Episode 17" ],
+    [ "You call your friends retards when they're acting retarded", "Michael Scott", "Season 3 - Episode 01" ],
+    [ "My God, if you're wearing a dress, please keep your knees together, nobody wants to see that.", "Michael Scott", "Season 5 - Episode 13" ],
+    [ "Everybody likes new inventions, new technology. People will never be replaced by machines. In the end, life and business are about human connections.", "Michael Scott", "Season 4 - Episode 02" ],
+    [ "A little cover-up on your Adam's apple will make it appear smaller, which will make you look less like a transvestite.", "Michael Scott", "Season 7 - Episode 21" ],
+    [ "Pizza. Great equalizer. Rich people love pizza. Poor people love pizza. White people love pizza. Black people love pizza.", "Michael Scott", "Season 2 - Episode 15" ],
+    [ "If we come across somebody with no arms or legs, do we bother resuscitating them?", "Michael Scott", "Season 5 - Episode 13" ],
+    [ "The most sacred thing I do is care and provide for my workers, my family.", "Michael Scott", "Season 1 - Episode 03" ],
+    [ "Any man who says he totally understands women is a fool. Because they are un-understandable.", "Michael Scott", "Season 3 - Episode 21" ],
+    [ "I set the rules, and you follow them blindly, okay? And if you have a problem with that, then you can talk to our complaint department. It's a trashcan.", "Michael Scott", "Season 5 - Episode 24" ],
+    [ "I don't know what I'm grabbing here!", "Michael Scott", "Season 3 - Episode 08" ],
+    [ "Negotiation is an art. Back and forth. Give and take.", "Michael Scott", "Season 3 - Episode 18" ],
+    [ "Why would you date an amateur when you can date a professional?", "Michael Scott", "Season 6 - Episode 07" ],
+    [ "Don't ever, for any reason, do anything to anyone for any reason ever, no matter what, no matter where, or who, or who you are with, or where you are going, or where you've been... ever, for any reason whatsoever.", "Michael Scott", "Season 5 - Episode 11" ],
+    [ "I have to say that I'm so impressed with the potential that you see in me.", "Michael Scott", "Season 5 - Episode 11" ],
+    [ "Don't think a woman can be a man? Well, then that's your stereotype, not mine.", "Michael Scott", "Season 5 - Episode 20" ],
+    [ "Is that what we're going for now, just OK? We used to go for pretty good.", "Michael Scott", "Season 6 - Episode 11" ],
+    [ "He is a good guy, not a terrorist.", "Michael Scott", "Season 2 - Episode 09" ],
+    [ "Usually if I fire somebody who's bad, I'll tell them how great they are. Because I don't want to hurt people's feelings.", "Donald Trump", "Larry King Live (2005)" ],
+    [ "I promise not to talk about your massive plastic surgeries that didn't work.", "Donald Trump", "Twitter (2012)" ],
+    [ "You know, wealthy people don't like me.", "Donald Trump", "Breitbart (2015)" ],
+    [ "I could be happy living in a studio apartment.", "Donald Trump", "Playboy (1990)" ],
+    [ "I have a great relationship with the blacks.", "Donald Trump", "Talk1300 (2011)" ],
+    [ "I don't even consider myself ambitious.", "Donald Trump", "60 Minutes (1985)" ],
+    [ "Money is a little bit of a scorecard, but I don't do it for the money.", "Donald Trump", "Late Edition with Wolf Blitzer (2004)" ],
+    [ "Bing bing, bong bong, bing bing bing", "Donald Trump", "Birch Run Speech (2015)" ],
+    [ "I'm not a huge fan of Japan, but I love their custom.", "Donald Trump", "Larry King Live (2005)" ],
+    [ "You know, it doesn't really matter ... as long as you've got a young and beautiful piece of ass.", "Donald Trump", "Esquire (1991)" ],
+    [ "If you need Viagra, you're probably with the wrong girl", "Donald Trump", "Playboy (2004)" ],
+    [ "It's very important that people aspire to be successful. The only way you can do it is if you look at somebody who is.", "Donald Trump", "Playboy (1990)" ],
+    [ "I mean, leadership is a very strange word because, you know, some people have it, some people don't and nobody knows why.", "Donald Trump", "Larry King Live (1999)" ],
+    [ "It's my opinion that to a large extent, Mike Tyson was railroaded in this case.", "Donald Trump", "NBC News (1992)" ],
+    [ "I've won many club championships and I was always the best athlete.", "Donald Trump", "Washington Post (2016)" ],
+    [ "I have never seen a thin person drinking Diet Coke.", "Donald Trump", "Twitter (2012)" ],
+    [ "The concept of shaking hands is absolutely terrible, and statistically I've been proven right.", "Donald Trump", "Playboy (2004)" ],
+    [ "Sometimes your best investments are the ones you don't make.", "Donald Trump", "Twitter (2013)" ],
+    [ "Sometimes by losing a battle you find a new way to win the war.", "Donald Trump", "Twitter (2014)" ],
+    [ "I don't like losers.", "Donald Trump", "About War Hero John McCain, Family Leadership Summit (2015)" ],
+    [ "It's always good to be underestimated.", "Donald Trump", "NO SOURCE FOUND" ],
+    [ "The only kind of people I want counting my money are little short guys that wear yarmulkes every day.", "Donald Trump", "Rolling Stone (2016)" ],
+    [ "Robert Pattinson should not take back Kristen Stewart.", "Donald Trump", "Twitter (2012)" ],
+    [ "It's freezing and snowing in New York. We need global warming!", "Donald Trump", "Twitter (2012)" ],
+    [ "The point is, you can never be too greedy.", "Donald Trump", "The Art of the Deal (1987)" ],
+    [ "I have so many fabulous friends who happen to be gay", "Donald Trump", "New York Times (2011)" ],
+    [ "Number one, I have great respect for women. I was the one that really broke the glass ceiling on behalf of women", "Donald Trump", "With Bill O'Reilly on Fox News (2016)" ],
+    [ "Success appears to happen overnight because we all see stories in newspapers and on TV about previously unknown people who have suddenly become famous. But consider a sequoia tree that has been growing for several hundred years. Just because a television crew one day decides to do a story about that tree doesn't mean it didn't exist before.", "Donald Trump", "How to Get Rich (2004)" ],
+    [ "We're becoming a drug-infested nation. Drugs are becoming cheaper than candy bars.", "Donald Trump", "Press Conference (2017)" ],
+    [ "Nuclear holocaust would be like no other.", "Donald Trump", "Press Conference (2017)" ],
+    [ "Russia is fake news.", "Donald Trump", "Press Conference (2017)" ],
+    [ "I must say that I never get phone calls from the media.", "Donald Trump", "Press Conference (2017)" ],
+    [ "I'm not ranting and raving. I'm just telling you, you're dishonest people.", "Donald Trump", "Press Conference (2017)" ],
+    [ "Lots of things are done with uranium, including some bad things.", "Donald Trump", "Press Conference (2017)" ],
+    [ "I am the least anti-Semitic person that you've ever seen in your entire life. Number two, racism, the least racist person.", "Donald Trump", "Press Conference (2017)" ]
 ];
+
+// Thanks http://stackoverflow.com/a/2450976
+function shuffle(array) {
+    var currentIndex = array.length, temporaryValue, randomIndex;
+
+    // While there remain elements to shuffle...
+    while (0 !== currentIndex) {
+
+        // Pick a remaining element...
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex -= 1;
+
+        // And swap it with the current element.
+        temporaryValue = array[currentIndex];
+        array[currentIndex] = array[randomIndex];
+        array[randomIndex] = temporaryValue;
+    }
+
+    return array;
+}
 
 var trumpFailGifArr = [
     "trump_christie.gif",
@@ -118,6 +144,7 @@ var michaelWinGifArr = [
 ];
 
 var originalQuoteArray = JSON.parse(JSON.stringify(trumpOrScottArr));
+var select15Array;
 var zeeAnswer = "";
 var linkLock = false;
 var numRight = 0;
@@ -126,9 +153,9 @@ var initialSize = trumpOrScottArr.length;
 var qNum = 0;
 
 function trumpOrScott() {
-    var index = Math.floor(Math.random() * trumpOrScottArr.length);
-    var quote = trumpOrScottArr[index];
-    trumpOrScottArr.splice(index, 1);
+    var index = Math.floor(Math.random() * select15Array.length);
+    var quote = select15Array[index];
+    select15Array.splice(index, 1);
     return [quote[1], quote[0]];
 }
 
@@ -163,7 +190,6 @@ function updateQuote() {
 function updateScore() {
     $("#num-wrong").html("Incorrect: " + numWrong);
     $("#num-right").html("Correct: " + numRight);
-    $("#running-score").css("display", "block");
 }
 
 function incrQNum() {
@@ -197,14 +223,14 @@ function lockNRetry() {
     $("#choose-scott").addClass("btn-default");
     $("#choose-trump").addClass("btn-default");
 
-    if (trumpOrScottArr.length === 0) {
+    if (select15Array.length === 0) {
         $("#final-right").html("You got " + numRight + " correct");
         $("#final-wrong").html("You got " + numWrong + " incorrect");
         $("#final-results").css('display', 'block');
     } else {
-        $("#go-again").css('display', 'block');
+        $(".go-again").css('display', 'block');
     }
-    $("html, body").animate({ scrollTop: $(document).height() }, "slow");
+    $("html, body").animate({ scrollTop: $(document).height() - 530 }, "slow");
 }
 
 function resetQuote() {
@@ -212,19 +238,27 @@ function resetQuote() {
     $("#choose-trump").addClass("btn-danger");
     $("#choose-scott").removeClass("btn-default");
     $("#choose-trump").removeClass("btn-default");
-    $("#go-again").css('display', 'none');
+    $(".go-again").css('display', 'none');
     linkLock = false;
 
     $("#answer").empty();
-    $("#running-score").css('display', 'none');
 
     updateQuote();
     incrQNum();
     $("html, body").animate({ scrollTop: 0 }, "slow");
 }
 
+function shuffleStart() {
+    trumpOrScottArr = shuffle(trumpOrScottArr);
+    select15Array = trumpOrScottArr.slice(0, 15);
+    initialSize = select15Array.length;
+    qNum = 0;
+}
 
 $(document).ready(function() {
+
+    shuffleStart();
+
     updateQuote();
 
     $("#choose-scott").click(function(e) {
@@ -237,7 +271,7 @@ $(document).ready(function() {
         execAnswer("Donald Trump");
     });
 
-    $("#reset-choice").click(function(e) {
+    $(".reset-choice").click(function(e) {
         e.preventDefault();
         resetQuote();
     });
@@ -246,6 +280,7 @@ $(document).ready(function() {
         e.preventDefault();
         $("#final-results").css('display', 'none');
         trumpOrScottArr = JSON.parse(JSON.stringify(originalQuoteArray))
+        shuffleStart();
         resetQuote();
     });
 
