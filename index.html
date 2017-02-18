@@ -47,11 +47,6 @@
         width: 100%;
     }
 
-    .label {
-        font-size: 24px;
-    }
-
-
     #go-again, #final-results, #trakr-ad {
         padding-bottom: 38px;
     }
@@ -62,11 +57,7 @@
         }
 
         .mobile-img {
-            max-width: 160px;
-        }
-
-        .label {
-            font-size: 16px;
+            max-width: 300px;
         }
     }
 </style>
@@ -95,23 +86,13 @@
     <div id="q-num"></div>
     <div id="scott-or-trump"></div><br>
     <a class="btn btn-info" href="#" id="choose-scott">Michael Scott</a> - <a class="btn btn-danger" href="#" id="choose-trump">Donald Trump</a><br><br>
-    <div class="go-again" style="display: none;"><a href="#" class="reset-choice">Another!</a><br><br></div>
-    <table class="table table-responsive">
-        <tr>
-            <td>
-                <div id="answer"></div><br>
-            </td>
-            <td>
-                <div id="answer-stats" style="display: none;">Answer Stats:<br><br>
-                    <div class="label label-success" id="right-stats"></div><br><br>
-                    <div class="label label-danger" id="wrong-stats"></div>
-                </div>
-            </td>
-        </tr>
-    </table>
+    <div id="answer"></div><br>
+    <div id="answer-stats" style="display: none;">Answer Stats:<br><br>
+        <div class="label label-success" id="right-stats"></div><br><br>
+        <div class="label label-danger" id="wrong-stats"></div>
+    </div>
     <br>
     <div id="quote-source" style="display: none;"></div><br>
-    <div class="go-again" style="display: none;"><a href="#" class="reset-choice">Another!</a><br><br></div>
     <div id="final-results" style="display: none;">
         <h3>Final score:</h3><br>
         <div id="final-right" class="label label-success"></div>
@@ -120,6 +101,7 @@
         <br><br>
         <a href="#" id="reset-all">Try again with a random assortment? We have 75 questions in total!</a>
     </div>
+    <div class="go-again" style="display: block;"><a href="#" class="to-top">Back to Top!</a><br><br></div>
     <div id="trakr-ad">
         <a href="https://trakr.link" target="_blank"><img src="images/trakr-ad.png"></a>
         <br>

@@ -148,7 +148,6 @@ var select15Array;
 var zeeAnswer = "";
 var currentSource = "";
 var currentId = 0;
-var linkLock = false;
 var numRight = 0;
 var numWrong = 0;
 var initialSize = trumpOrScottArr.length;
@@ -166,8 +165,6 @@ function getResults(win) {
         type: "POST",
         url: "http://jbegleiter.com/trumpstats/" + currentId,
         data: {'right': win},
-        crossDomain:true,
-        crossOrigin:true,
         success: function(d) {
             if (d.hasOwnProperty('question_response') && d.question_response.length > 0) {
                 $("#right-stats").html("Right answers: " + d.question_response[0].num_right);
@@ -234,18 +231,12 @@ function updateZeeAnswer(wrong) {
 }
 
 function execAnswer(personaNonGrata) {
-    if (linkLock === true) { return; }
     updateZeeAnswer(zeeAnswer !== personaNonGrata);
     lockNRetry();
+    resetQuote();
 }
 
 function lockNRetry() {
-    linkLock = true;
-    $("#choose-scott").removeClass("btn-info");
-    $("#choose-trump").removeClass("btn-danger");
-    $("#choose-scott").addClass("btn-default");
-    $("#choose-trump").addClass("btn-default");
-
     $("#quote-source").html("Source: " + currentSource);
     $("#quote-source").css('display', 'block');
 
@@ -253,27 +244,19 @@ function lockNRetry() {
         $("#final-right").html("You got " + numRight + " correct");
         $("#final-wrong").html("You got " + numWrong + " incorrect");
         $("#final-results").css('display', 'block');
-    } else {
-        $(".go-again").css('display', 'block');
     }
-    $("html, body").animate({ scrollTop: $(document).height() - 750 }, "slow");
+
+    var offset = 400;
+    if (qNum <= 1) {
+        offset = 250;
+    }
+
+    $("html, body").animate({ scrollTop: $(".to-top").offset().top - offset }, "slow");
 }
 
 function resetQuote() {
-    $("#choose-scott").addClass("btn-info");
-    $("#choose-trump").addClass("btn-danger");
-    $("#choose-scott").removeClass("btn-default");
-    $("#choose-trump").removeClass("btn-default");
-    $(".go-again").css('display', 'none');
-    linkLock = false;
-
-    $("#answer").empty();
-    $("#quote-source").css('display', 'none');
-    $("#answer-stats").css('display', 'none');
-
     updateQuote();
     incrQNum();
-    $("html, body").animate({ scrollTop: 0 }, "slow");
 }
 
 function shuffleStart() {
@@ -299,9 +282,9 @@ $(document).ready(function() {
         execAnswer("Donald Trump");
     });
 
-    $(".reset-choice").click(function(e) {
+    $(".to-top").click(function(e) {
         e.preventDefault();
-        resetQuote();
+        $("html, body").animate({ scrollTop: 0 }, "slow");
     });
 
     $("#reset-all").click(function(e) {
@@ -310,6 +293,7 @@ $(document).ready(function() {
         trumpOrScottArr = JSON.parse(JSON.stringify(originalQuoteArray))
         shuffleStart();
         resetQuote();
+        $("html, body").animate({ scrollTop: 0 }, "slow");
     });
 
     incrQNum();
