@@ -166,6 +166,8 @@ function getResults(win) {
         type: "POST",
         url: "http://jbegleiter.com/trumpstats/" + currentId,
         data: {'right': win},
+        crossDomain:true,
+        crossOrigin:true,
         success: function(d) {
             if (d.hasOwnProperty('question_response') && d.question_response.length > 0) {
                 $("#right-stats").html("Right answers: " + d.question_response[0].num_right);
