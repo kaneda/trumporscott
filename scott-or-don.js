@@ -146,6 +146,7 @@ var michaelWinGifArr = [
 var originalQuoteArray = JSON.parse(JSON.stringify(trumpOrScottArr));
 var select15Array;
 var zeeAnswer = "";
+var currentSource = "";
 var linkLock = false;
 var numRight = 0;
 var numWrong = 0;
@@ -156,7 +157,7 @@ function trumpOrScott() {
     var index = Math.floor(Math.random() * select15Array.length);
     var quote = select15Array[index];
     select15Array.splice(index, 1);
-    return [quote[1], quote[0]];
+    return [quote[1], quote[0], quote[2]];
 }
 
 function getGif(wrong) {
@@ -183,6 +184,7 @@ function getGif(wrong) {
 function updateQuote() {
     var currentQuote = trumpOrScott();
     zeeAnswer = currentQuote[0];
+    currentSource = currentQuote[2];
 
     $("#scott-or-trump").html(currentQuote[1]);
 }
@@ -223,6 +225,9 @@ function lockNRetry() {
     $("#choose-scott").addClass("btn-default");
     $("#choose-trump").addClass("btn-default");
 
+    $("#quote-source").html("Source: " + currentSource);
+    $("#quote-source").css('display', 'block');
+
     if (select15Array.length === 0) {
         $("#final-right").html("You got " + numRight + " correct");
         $("#final-wrong").html("You got " + numWrong + " incorrect");
@@ -230,7 +235,7 @@ function lockNRetry() {
     } else {
         $(".go-again").css('display', 'block');
     }
-    $("html, body").animate({ scrollTop: $(document).height() - 530 }, "slow");
+    $("html, body").animate({ scrollTop: $(document).height() - 650 }, "slow");
 }
 
 function resetQuote() {
@@ -242,6 +247,7 @@ function resetQuote() {
     linkLock = false;
 
     $("#answer").empty();
+    $("#quote-source").css('display', 'none');
 
     updateQuote();
     incrQNum();
