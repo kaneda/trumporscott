@@ -152,6 +152,7 @@ var numRight = 0;
 var numWrong = 0;
 var initialSize = trumpOrScottArr.length;
 var qNum = 0;
+var linkLock = false;
 
 function trumpOrScott() {
     var index = Math.floor(Math.random() * select15Array.length);
@@ -231,6 +232,7 @@ function updateZeeAnswer(wrong) {
 }
 
 function execAnswer(personaNonGrata) {
+    if (linkLock === true) { return; }
     updateZeeAnswer(zeeAnswer !== personaNonGrata);
     lockNRetry();
     resetQuote();
@@ -241,6 +243,11 @@ function lockNRetry() {
     $("#quote-source").css('display', 'block');
 
     if (select15Array.length === 0) {
+        linkLock = true;
+        $("#choose-scott").removeClass("btn-info");
+        $("#choose-trump").removeClass("btn-danger");
+        $("#choose-scott").addClass("btn-default");
+        $("#choose-trump").addClass("btn-default");
         $("#final-right").html("You got " + numRight + " correct");
         $("#final-wrong").html("You got " + numWrong + " incorrect");
         $("#final-results").css('display', 'block');
@@ -293,6 +300,14 @@ $(document).ready(function() {
         trumpOrScottArr = JSON.parse(JSON.stringify(originalQuoteArray))
         shuffleStart();
         resetQuote();
+
+        $("#choose-scott").addClass("btn-info");
+        $("#choose-trump").addClass("btn-danger");
+        $("#choose-scott").removeClass("btn-default");
+        $("#choose-trump").removeClass("btn-default");
+
+        linkLock = false;
+
         $("html, body").animate({ scrollTop: 0 }, "slow");
     });
 
