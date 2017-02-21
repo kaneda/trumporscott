@@ -14,64 +14,22 @@
 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-<script src="scott-or-don.js?cb=11"></script>
+<script src="scott-or-don.js?cb=12"></script>
 
-<style>
-    body {
-        font-size: 24px;
-    }
-
-    .footer {
-        font-size: 12px;
-        color: #fff;
-        max-height: 15px;
-    }
-
-    .footer div {
-        padding-top: 3px;
-    }
-
-    .header {
-        height: 168px;
-        margin-bottom: 25px;
-        background-color: #fafafa;
-        text-align: center;
-        border-bottom: 1px solid #f0f0f0;
-    }
-
-    .navbar {
-        min-height: 28px;
-    }
-
-    #answer {
-        width: 100%;
-    }
-
-    #go-again, #final-results, #trakr-ad {
-        padding-bottom: 38px;
-    }
-
-    .label {
-        font-size: 24px;
-    }
-
-    @media only screen and (max-width: 500px) {
-        .subtitle {
-            display: none;
-        }
-
-        .mobile-img {
-            max-width: 160px;
-        }
-
-        .label {
-            font-size: 16px;
-        }
-    }
+<link rel="stylesheet" href="site.css?cb=1">
 </style>
 
 </head>
 <body>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=1354677054589092";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 
 <div class="header text-center">
     <table class="table table-responsive text-center" style="width: 100%; margin: auto;">
@@ -94,12 +52,12 @@
     <div id="q-num"></div>
     <div id="scott-or-trump"></div><br>
     <a class="btn btn-info" href="#" id="choose-scott">Michael Scott</a> - <a class="btn btn-danger" href="#" id="choose-trump">Donald Trump</a><br><br>
-    <table class="table table-responsive">
+    <table class="table table-responsive" style="width: 100%; margin: auto;">
         <tr>
-            <td>
+            <td width="50%">
                 <div id="answer"></div><br>
             </td>
-            <td>
+            <td width="50%">
                 <div id="answer-stats" style="display: none;">Answer Stats:<br><br>
                     <div class="label label-success" id="right-stats"></div><br><br>
                     <div class="label label-danger" id="wrong-stats"></div>
@@ -115,7 +73,19 @@
         <br><br>
         <div id="final-wrong" class="label label-danger"></div>
         <br><br>
-        <a href="#" id="reset-all">Try again with a random assortment? We have 75 questions in total!</a>
+        <table class="table table-responsive" style="width: 100%; margin: auto;">
+            <tr>
+                <td style="text-align: right;" width="50%">
+                    <div class="fb-like" data-href="http://trumporscott.com" data-layout="button" data-action="like" data-size="large" data-show-faces="true" data-share="false"></div>
+                </td>
+                <td style="text-align: left;" width="50%">
+                    <a href="#" id="fb-share"><img src="images/fb_share.jpg"></a>
+                </td>
+            </tr>
+        </table>
+        <br><br>
+        <a href="#" id="reset-all">Try again with a random assortment? We have 75 questions in total!</a> or <a href="https://www.facebook.com/Trump-or-Scott-1025676610865273" target="_blank">Visit our FB page</a>
+        <br><br>
     </div>
     <div class="go-again" style="display: block;"><a href="#" class="to-top">Back to Top!</a><br><br></div>
     <div id="trakr-ad">

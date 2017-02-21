@@ -311,5 +311,18 @@ $(document).ready(function() {
         $("html, body").animate({ scrollTop: 0 }, "slow");
     });
 
+    $("#fb-share").click(function(e) {
+        e.preventDefault();
+
+        if (FB) {
+            FB.ui({
+                method: 'feed',
+                link: 'http://trumporscott.com',
+                picture: 'http://trumporscott.com/images/trmp_v_scott_icon.png',
+                caption: 'I scored ' + numRight + ' / ' + (numRight + numWrong) + ' on trumporscott.com!',
+            }, function(response){});
+        }
+    });
+
     incrQNum();
 });

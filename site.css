@@ -1,0 +1,57 @@
+body {
+    font-size: 24px;
+}
+
+#fb-share img {
+    max-height: 28px;
+    max-width: 80px;
+}
+
+.footer {
+    font-size: 12px;
+    color: #fff;
+    max-height: 15px;
+}
+
+.footer div {
+    padding-top: 3px;
+}
+
+.header {
+    height: 168px;
+    margin-bottom: 25px;
+    background-color: #fafafa;
+    text-align: center;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.navbar {
+    min-height: 28px;
+}
+
+#answer {
+    width: 100%;
+    text-align: right;
+}
+
+#go-again, #final-results, #trakr-ad {
+    padding-bottom: 38px;
+}
+
+.label {
+    font-size: 24px;
+}
+
+@media only screen and (max-width: 500px) {
+    .subtitle {
+        display: none;
+    }
+
+    .mobile-img {
+        max-width: 160px;
+    }
+
+    .label {
+        font-size: 16px;
+    }
+}
